@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Pendeteksi Potensi Kebakaran Hutan</title>
+  <title>FFD</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,41 +21,41 @@
       <br><br>
       <h1 class="header center orange-text">Forest Fire Detector</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Memprediksi kemungkinan Terjadinya Kebakaran Hutan
+        <h5 class="header col s12 light">Predicting the probability of a forest fire
         <br>
         </h5>
       </div>
 
               <div class="row">
-    <form action='/predict' method="post" class="col s12">
-      <div class="row">
-        <div class="input-field col s4">
-            <label for="first_name"><b>Suhu</b></label>
-            <br>
-          <input placeholder="Suhu dalam Celcius" name="Temperature" id="first_name" type="text" class="validate">
-        </div>
-        <div class="input-field col s4">
-
-          <label for="last_name"><b>Oksigen</b></label>
-            <br>
-          <input id="last_name" name="Oxygen" placeholder="Kandungan oksigen dalam ppm"  type="text" class="validate">
-
-        </div>
-
-        <div class="input-field col s4">
-            <label for="_name"><b>Kelembaban</b></label>
-            <br>
-          <input id="_name" name="Humidity" placeholder="Kelembaban %" type="text" class="validate">
-
-        </div>
-
-      </div>
-
-      <div class="row center">
-
-          <button type="submit" class="btn-large waves-effect waves-light orange">Prediksi Probabilitas</button>
-      </div>
-    </form>
+                <form action='/predict' method="post" class="col s12">
+                  <div class="row">
+                    <div class="input-field col s4">
+                        <label for="first_name"><b>Temperature</b></label>
+                        <br>
+                      <input placeholder="Temperature in Celsius" name="Temperature" id="first_name" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s4">
+            
+                      <label for="last_name"><b>Oxygen </b></label>
+                        <br>
+                      <input id="last_name" name="Oxygen" placeholder="Oxygen content in ppm"  type="text" class="validate">
+            
+                    </div>
+            
+                    <div class="input-field col s4">
+                        <label for="_name"><b>Humidity</b></label>
+                        <br>
+                      <input id="_name" name="Humidity" placeholder="Humidity %" type="text" class="validate">
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="row center">
+            
+                      <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+                  </div>
+                </form>
       </div>
 
       <br><h4 align="center">{{pred}}</b></h4>
