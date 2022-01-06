@@ -1,2 +1,2 @@
-# forest_fire_detector
-Forest Fire Detector
+# Perkiraan-Bencana-Kebakaran-Hutan
+ Perkiraan-Bencana-Kebakaran-Hutan
